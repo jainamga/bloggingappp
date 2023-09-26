@@ -14,6 +14,8 @@ import Trail from './components/trail';
 import NewFeed from './components/NewFeed';
 import PostPage2 from './pages/PostPage copy';
 import PostPage from './pages/PostPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
