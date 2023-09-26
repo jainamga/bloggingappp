@@ -61,7 +61,7 @@ class Login extends Component {
           console.log(resp);
           localStorage.setItem("data",JSON.stringify("data"));
 
-           this.props.router.navigate("/NewFeed");
+           this.props.router.navigate("/test3");
            window.location.reload();
         },
         error => {

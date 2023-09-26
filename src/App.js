@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import LoginComponent from './components/login.component';
+import CardComponent from './components/Test3';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <ToastContainer position='bottom-center'/>
    <Routes>
    <Route path='/' element={<LoginComponent/> }/>
-   
+   <Route path='/test3' element={<CardComponent/>}/>
+
 
    </Routes>
     </div>
