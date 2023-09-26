@@ -59,7 +59,7 @@ const createPost = (event) =>{
     event.preventDefault();
     console.log(post);
     
-    axios.post(`http://localhost:8087/api/user/${userId}/category/${categoryId}/posts`,post , { headers: authHeader() })
+    axios.post(`https://login2-production.up.railway.app/api/user/${userId}/category/${categoryId}/posts`,post , { headers: authHeader() })
     .then((res) => {
       setResponse(res.data);
       console.log(res.data);
