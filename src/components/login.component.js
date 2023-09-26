@@ -4,6 +4,7 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 
 import AuthService from "../services/auth.service2";
+import Base from '../components/Base';
 
 import { withRouter } from '../common/with-router';
 import { isLoggedIn } from "../auth";
@@ -88,6 +89,7 @@ class Login extends Component {
   render() {
     return (
       <>
+      <Base/>
       <div className="col-md-12 d-flex justify-content-center align-items-center vh-100">
         
         <div className="card card-container p-4">

@@ -4,6 +4,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import LoginComponent from './components/login.component';
 import CardComponent from './components/Test3';
+import Signup from './pages/Signup';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
    <Routes>
    <Route path='/' element={<LoginComponent/> }/>
    <Route path='/test3' element={<CardComponent/>}/>
+   <Route path='/signup' element={<Signup/> }/>
 
 
    </Routes>

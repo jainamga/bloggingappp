@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import authHeader from '../services/auth-header';
 import { Button, Card, CardBody, CardText, Col,Row ,PaginationItem,Pagination,PaginationLink, Container} from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Base from './Base';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 function CardComponent() {
@@ -56,8 +57,8 @@ const [currentPage, setCurrentPage] = useState(0)
   const currentPageNumber =()=>{}
   return (
     <div  className='container-fluid'>
-      
-      {/* <InfiniteScroll dataLength={data.length} next={changePageInfinite} hasMore={!postContent.lastPage} > */}
+      <Base/>
+      <InfiniteScroll dataLength={data.length} next={changePageInfinite} hasMore={!postContent.lastPage} >
 
       <Row>
           
@@ -100,7 +101,7 @@ const [currentPage, setCurrentPage] = useState(0)
       </Card>
       </Col>
       </Row>
-      {/* </InfiniteScroll> */}
+      </InfiniteScroll>
 
     </div>
   );
