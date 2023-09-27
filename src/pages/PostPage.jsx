@@ -15,7 +15,7 @@ const PostPage = () => {
         content: ''
     })
     
-    const API_URL2 = `http://login2-production.up.railway.app/api/posts/${postId}`;
+    const API_URL2 = `https://login2-production.up.railway.app/api/posts/${postId}`;
     useEffect(() => {
         // load post of postId 
         myAxios.get(API_URL2 , { headers: authHeader() }).then(data => {
