@@ -18,8 +18,8 @@ const PostPage2 = () => {
     setComment({ content: event.target.value });
   };
 
-  const API_URL2 = `http://localhost:8087/api/posts/${postId}`;
-  const API_URL3 = `http://localhost:8087/api/comments/post/${postId}/comments`;
+  const API_URL2 = `http://login2-production.up.railway.app/api/posts/${postId}`;
+  const API_URL3 = `http://login2-production.up.railway.app/api/comments/post/${postId}/comments`;
 
   useEffect(() => {
     // load post of postId 

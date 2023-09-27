@@ -30,7 +30,7 @@ const handleSubmit =(event)=>
   
   event.preventDefault();
   console.log(loginDetails);
-  axios.post('http://localhost:8087/api/auth/signin',loginDetails).then((resp)=>{
+  axios.post('http://login2-production.up.railway.app/api/auth/signin',loginDetails).then((resp)=>{
   const cookies = resp.headers['Set-Cookie'];
   // const value = Cookies.get('bezkoder');
   // console.log(value);
